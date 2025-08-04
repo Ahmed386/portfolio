@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import TextType from "./TextType";
-import TextType from './../TextType';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 
@@ -17,6 +15,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { Typewriter } from "react-simple-typewriter";
 
 
 
@@ -49,7 +48,7 @@ const Landingpage = () => {
     
 useEffect(() => {
   AOS.init({
-    duration: 1500, // animation duration
+    duration: 1500, 
   });
 }, []);
 
@@ -121,8 +120,6 @@ useEffect(() => {
           <div className="row text-white h-100 w-100 ">
             <div className="col-md-6 col-sm-12 d-flex align-items-center">
               <div className="brief p-4 lh-lg ">
-                {/* <span className="text-white mb-3">Ahmed ghoneim</span> */}
-
                 <h1 className="fw-bolder text-white display-2 mb-3">
                   Hi! I’m <br /> Ahmed
                 </h1>
@@ -134,13 +131,25 @@ useEffect(() => {
               </div>
             </div>
             <div className="col-md-6 col-sm-12 overflow-hidden text-center d-flex justify-content-center align-items-center ">
-              <TextType
+              {/* <TextType
                 text={["I'm a Developer", "I'm a Designer", "Contact Me"]}
                 typingSpeed={115}
                 pauseDuration={2000}
                 showCursor={true}
                 cursorCharacter="|"
-              />
+              /> */}
+
+              <h1 className="text-type">
+                <Typewriter
+                  words={["I'm a Developer", "I'm a Designer", "Contact Me"]}
+                  loop
+                  cursor
+                  cursorStyle="_"
+                  typeSpeed={170}
+                  deleteSpeed={150}
+                  delaySpeed={1000}
+                />
+              </h1>
             </div>
           </div>
         </div>
