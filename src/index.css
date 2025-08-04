@@ -1,0 +1,257 @@
+nav , body{
+    background: #060010;;
+}
+nav{
+    z-index: 100;
+}
+
+.firstPage{
+    background-image: url(pexels-tanmay-ghosh-326722612-13812395.jpg);
+            background-position: center center;
+            background-size: cover;
+            animation: Backwave 6s linear  infinite alternate; 
+            height:100dvh ;
+            max-width: 100%;
+}
+
+        
+  @keyframes Backwave {
+              0% {
+        background-position: left center;
+      }
+      100% {
+        background-position: right bottom;
+
+      }
+        }
+
+.landingpage li a{
+    color: white !important;
+    transition: .3s all;
+}
+
+.landingpage li a:hover{
+    color: #00ffff !important;
+    transform: translateY(3px);
+}
+
+.contact{
+    background-color: black;
+    color: #cecfcf;
+    border: 1px solid #05355F;
+    transition: .4s;
+    transform: translateY(0);
+}
+
+.contact:hover{
+    background-color: #00ffff;
+    color: black;
+    border: 1px solid black;
+    transform: translateY(3px);
+
+}
+
+.brief span{
+    letter-spacing: .3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+   
+}
+
+.brief p {
+    color: rgba(255, 255, 255 , .8);
+}
+
+.ticket{
+    background-color: #05345F;
+    padding: .3rem 1rem;
+    border-radius: 4px;
+    
+}
+
+.review-box{
+    display: flex;
+}
+
+
+.r-box{
+margin: .8rem;
+text-align: center;
+padding: 1rem;
+border: .5px solid rgba(255, 255, 255,.3);
+border-radius: 5px;
+transform: scale(1);
+transition: .4s all;
+cursor: pointer;
+}
+
+.review-box :first-child{
+    margin-left: 0;
+}
+
+
+.r-box:hover{
+transform: scale(1.1);
+
+}
+
+.devphoto{
+    background-image: url(./s1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+            animation: Backwave 7s linear  infinite alternate; 
+            border-top-left-radius: 20%;
+            border-bottom-right-radius: 20%;
+}
+
+/* btttn */
+ 
+ .in{
+    padding: 1rem 3rem ;
+    position: relative;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: #0a2437;
+    color: white;
+    z-index: 99;
+    transition: .5s;
+
+ }
+
+ .btn-bar{
+    padding: .2rem;
+    position: relative;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: #19384d;
+    overflow: hidden;
+    transition: .5s all;
+    margin-top: .5rem
+ }
+
+ .btn-bar:hover .in {
+    background: aqua;
+    color: black;
+ }
+
+ .btn-bar:hover{
+    background: aqua;
+    box-shadow: 0 0 10px aqua , 0 0 40px aqua , 0 0 80px aqua, 0 0 100px aqua;
+ }
+
+
+ .btn-bar::after{
+    content:'';
+    position:absolute;
+    background: aqua;
+    top: 50%;
+    left:50%;
+    width: 2rem;
+    height: 12rem;  
+    transform: translate(-50%,-50%) rotate(45deg);
+    animation: spin 2s linear infinite ;
+
+
+    
+
+}
+@keyframes spin {
+    100%{
+        transform: translate(-50%,-50%) rotate(225deg);
+    }
+}
+
+/* btnnnn */
+
+/* circular-gallery */
+
+
+.circular-gallery {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.circular-gallery:active {
+  cursor: grabbing;
+}
+
+/* *************** */
+
+/* scroll bar */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 5px !important; 
+  
+}
+
+::-webkit-scrollbar-track {
+  background: black; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00bcd4; 
+  border-radius: 10px;
+  border: 2px solid transparent;
+} 
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #028599;
+} 
+
+.ex-box{
+        border-radius: 10px;
+    padding: 25px;
+    background: #04192d;
+    border-top-right-radius:20%; 
+
+}
+
+.ex-left{
+        border: 1px solid aqua;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.shadow{
+    border: 1px solid #063E72;
+    border-radius: 2px;
+    background-color: #04192D;
+}
+
+.rgb{
+    color: rgba(255, 255, 255,.7) !important;
+}
+
+.myic{
+    font-size: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 7px;
+    transition: .6s;
+    transform: scale(1);
+    color: white;
+    
+}
+
+.myic:hover{
+    color: black;
+    background-color: #00ffff;
+    border: 1px solid black;
+    transform: scale(1.2);
+    cursor: pointer;
+
+
+}
+
+.card {
+    border: none !important;
+}
+
+
+
