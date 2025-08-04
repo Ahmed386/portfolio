@@ -257,3 +257,10 @@ transform: scale(1.1);
   filter: invert(100%) !important;
 }
 
+@media (max-width:765px){
+    .projerror{
+        display: flex !important;
+        justify-content: center !important;
+    }
+}
+

@@ -199,7 +199,7 @@ useEffect(() => {
                   </div>
                   <div className="r-box">
                     <h3>
-                      1<span>+</span>
+                      2<span>+</span>
                     </h3>
                     <label>Years Experience</label>
                   </div>
@@ -228,7 +228,7 @@ useEffect(() => {
 
       <div className="mywork py-5" id="projects">
         <div className=" p-5 text-center text-white">
-          <div className="container">
+          <div className="container ">
             <div className="row text-center ">
               <div className="col-12">
                 <h1 className="mb-4 fw-bolder ">
@@ -238,7 +238,7 @@ useEffect(() => {
               </div>
             </div>
 
-            <div className="row mt-5">
+            <div className="row mt-5 ">
               {projectsData.length > 3 && (
                 <Swiper
                   modules={[Autoplay, Pagination]}
@@ -265,7 +265,7 @@ useEffect(() => {
                   loop={true}
                 >
                   {projectsData.map((d, index) => (
-                    <SwiperSlide key={index}>
+                    <SwiperSlide key={index} className="projerror">
                       <div className="card mb-5 " style={{ width: "22rem" }}>
                         <img
                           src={d.src}
