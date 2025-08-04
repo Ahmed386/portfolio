@@ -6,7 +6,7 @@ nav{
 }
 
 .firstPage{
-    background-image: url(pexels-tanmay-ghosh-326722612-13812395.jpg);
+    background-image: url(/pexels-tanmay-ghosh-326722612-13812395.jpg);
             background-position: center center;
             background-size: cover;
             animation: Backwave 6s linear  infinite alternate; 
@@ -271,7 +271,7 @@ transform: scale(1.1);
   font-size: 4rem;
   font-weight: 700;
    color: transparent !important;
-            background-image: url(r2.png);
+            background-image: url(/r2.png);
             background-position: center left;
             background-repeat: no-repeat;
             background-size: cover;

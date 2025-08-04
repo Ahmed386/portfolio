@@ -131,13 +131,7 @@ useEffect(() => {
               </div>
             </div>
             <div className="col-md-6 col-sm-12 overflow-hidden text-center d-flex justify-content-center align-items-center ">
-              {/* <TextType
-                text={["I'm a Developer", "I'm a Designer", "Contact Me"]}
-                typingSpeed={115}
-                pauseDuration={2000}
-                showCursor={true}
-                cursorCharacter="|"
-              /> */}
+             
 
               <h1 className="text-type">
                 <Typewriter
