@@ -253,5 +253,7 @@ transform: scale(1.1);
     border: none !important;
 }
 
-
+.navbar-toggler-icon {
+  filter: invert(100%) !important;
+}
 

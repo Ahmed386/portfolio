@@ -67,7 +67,7 @@ useEffect(() => {
             </a>
 
             <button
-              className="navbar-toggler text-white"
+              className="navbar-toggler "
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -75,7 +75,7 @@ useEffect(() => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="navbar-toggler-icon text-white"></span>
+              <span className="navbar-toggler-icon "></span>
             </button>
 
             <div
@@ -94,22 +94,25 @@ useEffect(() => {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link " href="#">
-                    Services
+                  <a className="nav-link " href="#projects">
+                    Projects
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link " href="#">
-                    Portfolio
+                  <a className="nav-link " href="#experience">
+                    Experience
                   </a>
                 </li>
               </ul>
             </div>
 
             <div className="d-none d-lg-block">
-              <button className="btn btn btn-outline-info px-4 py-2 fw-bold">
+              <a
+                className="btn btn btn-outline-info px-4 py-2 fw-bold"
+                href="#contact"
+              >
                 Contact Me
-              </button>
+              </a>
             </div>
           </div>
         </nav>
@@ -118,13 +121,13 @@ useEffect(() => {
           <div className="row text-white h-100 w-100 ">
             <div className="col-md-6 col-sm-12 d-flex align-items-center">
               <div className="brief p-4 lh-lg ">
-                <span className="text-white mb-3">Ahmed ghoneim</span>
+                {/* <span className="text-white mb-3">Ahmed ghoneim</span> */}
 
                 <h1 className="fw-bolder text-white display-2 mb-3">
                   Hi! I’m <br /> Ahmed
                 </h1>
                 <p className="fw-bold ">
-                  A passionate and motivated Frontend Developer with 1 year of
+                  A passionate and motivated Frontend Developer with 2 year of
                   hands-on experience in building and maintaining responsive,
                   user-friendly websites.
                 </p>
@@ -223,7 +226,7 @@ useEffect(() => {
         </div>
       </div>
 
-      <div className="mywork py-5">
+      <div className="mywork py-5" id="projects">
         <div className=" p-5 text-center text-white">
           <div className="container">
             <div className="row text-center ">
@@ -290,7 +293,7 @@ useEffect(() => {
         </div>
       </div>
 
-      <div className="experience">
+      <div className="experience" id="experience">
         <section className="section gray-bg text-white">
           <div className="container">
             <div className="section-heading mb-5">
@@ -438,7 +441,7 @@ useEffect(() => {
         </section>
       </div>
 
-      <div className="contactme py-5 ">
+      <div className="contactme py-5 " id="contact">
         <div className="container shadow py-5">
           <div className="row">
             <div className="col-12 text-white">
